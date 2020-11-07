@@ -12,7 +12,14 @@ h1 {
 h3 {
     font-size:22px;
 }
- 
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
 #content-wrapper {
     width:960px;
     text-align:left;
