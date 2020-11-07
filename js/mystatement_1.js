@@ -19,11 +19,7 @@ function toTimestamp(strDate){
 }
 
 function log(...params){
-    if (LEVEL == 'DEBUG') {
-           var j = 'DEBUG ';
-    } else {
-       var j = 'INFO';
-    }
+    var j = ''
     for (i=0; i<params.length; i++) {
     j += (params[i])
   }
@@ -31,5 +27,5 @@ function log(...params){
 }
 
 
-document.write(log(toTimestamp(myDate).toString(), turnLight(inRoom[0],'on'), ' List in Room: ', inRoom));
+document.write(log(toTimestamp(myDate).toString(), ' ', LEVEL, ': ', turnLight(inRoom[0],'on'), ' Things in Room: ', inRoom));
 
