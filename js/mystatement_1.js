@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>writing on a white paper in the room</h2>
-<p>Roaming.</p>
-
-<p> I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on.
-Near there is a lamp on the wall. The light is on.</p>
-
-<script>
 // I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on.
 // Near there is a lamp on the wall. The light is on.
 
@@ -43,9 +32,4 @@ function log(...params){
 
 
 document.write(log(toTimestamp(myDate).toString(), turnLight(inRoom[0],'on'), ' List in Room: ', inRoom));
-
-</script>
-
-</body>
-</html> 
 
