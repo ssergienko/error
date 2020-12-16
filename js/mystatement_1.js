@@ -4,18 +4,15 @@
 var myDate = "10/30/2020 15:51:00";
 var inRoom = ['Lamp', 'Table', 'Glass', 'whitePaper'];
 var LEVEL = 'DEBUG';
+var SCHIZO = 10;
+var k,i;
 
 function turnLight(thing, state){
         if (state == 'on') {
-        return thing + " is on";
+          return thing + " is on";
     } else {
         return thing + ' is off';
     }
-}
-
-function toTimestamp(strDate){
-   var datum = Date.parse(strDate);
-   return datum/1000;
 }
 
 function log(...params){
@@ -26,6 +23,7 @@ function log(...params){
         return j;
 }
 
-
-document.write(log(toTimestamp(myDate).toString(), ' ', LEVEL, ': ', turnLight(inRoom[0],'on'), ' Things in Room: ', inRoom));
-
+for (k=1; k < SCHIZO; k++) {
+   var datum = Date.parse(myDate).toString();
+   document.write(log(datum/1000 + k, ' ', LEVEL, ': ', turnLight(inRoom[0],'on'), ' Things in Room: ', inRoom) + "<br>");
+}
