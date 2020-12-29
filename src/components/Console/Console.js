@@ -11,7 +11,7 @@ function Console() {
     things: 'things=' + ['Lamp', 'Table', 'Glass', 'whitePaper'].join(','),
     time: 'time=0.0' + (Math.random() * ((31, 65)) + 31).toFixed().toString()
   };
-  
+
   const [logs, setLogs] = React.useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Console() {
       if(!logs.length) { 
         logsRes = [[config.bites, config.light, config.things, config.time].join(' ')]; }
       else {
-        logsRes.push(...logs, config.bites + ' ' + config.light + ' ' + config.things + ' ' + config.time);
+        logsRes.push(...logs, [config.bites, config.light, config.things, config.time].join(' '));
       }
       setLogs(logsRes);
     }, 1000);

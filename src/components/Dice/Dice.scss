@@ -1,0 +1,47 @@
+.dice_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFF2F5;
+  color: #000;
+  height: 350px;
+  
+  .dice_middle_block {
+    .dices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      .dice {
+        width: 60px;
+        height: 60px;
+        background-size: 100%;
+        padding: 10px;
+      }
+      .dice-1 {
+        background-image: url("https://anerror.s3.amazonaws.com/1.png");
+      }
+      .dice-2 {
+        background-image: url("https://anerror.s3.amazonaws.com/2.png");
+      }
+      .dice-3 {
+        background-image: url("https://anerror.s3.amazonaws.com/3.png");
+      }
+      .dice-4 {
+        background-image: url("https://anerror.s3.amazonaws.com/4.png");
+      }
+      .dice-5 {
+        background-image: url("https://anerror.s3.amazonaws.com/5.png");
+      }
+      .dice-6 {
+        background-image: url("https://anerror.s3.amazonaws.com/6.png");
+      }
+    }
+    .user-feedback {
+      width: 100%;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+}
