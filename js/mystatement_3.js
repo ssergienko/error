@@ -1,29 +1,30 @@
 // On all counts I was to feel worse today. But I'm well.
 // It's illogic
 
-var count = 0;
-console.log('hello there');
+let [min, max, count, maxAttempts] = [1, 6, 0, 1000];
+let dice1el = document.getElementById("dice-1");
+let dice2el = document.getElementById("dice-2");
 
 function rolldice() {
-  var x = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
-  var y = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
-
-  return {
-        x: x,
-        y: y,
-  };
+  return { 
+    x: Math.floor(Math.random() * ((max - min) + 1) + 1),
+    y: Math.floor(Math.random() * ((max - min) + 1) + 1)
+  }
 };
 
-while (true) {
-  count++;
-  //Now reroll the dice, is it your state?
-  var dice = rolldice();
-  var dicetotal = dice.x + dice.y;
+function run() {
+  for(let i=0; i < maxAttempts; i++) {
+    //Now reroll the dice, is it your state?
+    let dice = rolldice();
 
-  document.write("<p>Attempt #" + count + " Score: " + dicetotal + " What am I feeling?..</p>");
+    (function(i) {
+      setTimeout(function() {
+        dice1el.innerHTML = dice.x;
+        dice2el.innerHTML = dice.y;
+      }, 3000*i);
+    })(i); 
 
-  if (dice.x == dice.y) {
-    // Enough! I'm out of there.
-    break;
   }
 }
+
+run();
