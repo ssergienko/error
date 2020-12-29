@@ -7,7 +7,11 @@
       "surname": "Name",
       "avatar": ""
     },
-    "text": "I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on. Near there is a lamp on the wall. The light is on."
+    "text": "I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on. Near there is a lamp on the wall. The light is on.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/111.png"
+    }
   },
   {
     "id": 2,
@@ -17,7 +21,11 @@
       "surname": "Name",
       "avatar": ""
     },
-    "text": "I was sure it would be worse today. But I've been feeling well inside myself. That's confusing."
+    "text": "I was sure it would be worse today. But I've been feeling well inside myself. That's confusing.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/111.png"
+    }
   },
   {
     "id": 3,
@@ -27,6 +35,10 @@
       "surname": "Name",
       "avatar": ""
     },
-    "text": "I've developed a program that controls my day minute by minute. I've got 2 minutes to get myself dressed and brushed before it's time to consume food."
+    "text": "I've developed a program that controls my day minute by minute. I've got 2 minutes to get myself dressed and brushed before it's time to consume food.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/111.png"
+    }
   }
 ]
