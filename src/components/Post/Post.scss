@@ -1,0 +1,56 @@
+.post {
+  width: 50%;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  .author {
+    display: flex;
+    padding: 15px 15px 0;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      background-color: #8BAE8B;
+      border-radius: 50%;
+      margin: 0 15px 15px 0;
+      text-align: center;
+      span {
+        display: block;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+    }
+    .name {
+      color: #000;
+      font-weight: 700;
+    }
+  }
+  .text {
+    font-size: 14px;
+    color: #000;
+    padding: 0 15px;
+  }
+  .widget {
+    margin-top: 15px;
+    height: auto;
+    background-color: #000;
+    overflow: hidden;
+    li {
+      list-style-type: none;
+    }
+    .code {
+      text-align: center;
+    }
+  }
+  .source-code-button {
+    width: 100%;
+    height: 60px;
+    background-color: #8BAE8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
