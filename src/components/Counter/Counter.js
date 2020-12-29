@@ -18,7 +18,7 @@ function Counter() {
 
   return (
     <div className="counter">
-      {counter >= 60 && (<span>01:{counter-60 > 10 ? counter-60 : '0' + (counter-60).toString()}</span>)}
+      {counter >= 60 && (<span>01:{counter-60 >= 10 ? counter-60 : '0' + (counter-60).toString()}</span>)}
       {counter < 60 && (<span>00:{counter < 10 ? '0' + counter.toString() : counter}</span>)}
     </div>
   );
