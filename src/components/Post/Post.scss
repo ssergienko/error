@@ -33,8 +33,12 @@
     margin-top: 15px;
     height: auto;
     background-color: #000;
+    overflow: hidden;
     li {
       list-style-type: none;
+    }
+    .code {
+      text-align: center;
     }
   }
   .source-code-button {
