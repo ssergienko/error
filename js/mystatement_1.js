@@ -1,29 +1,35 @@
 // I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on.
 // Near there is a lamp on the wall. The light is on.
 
-var myDate = "10/30/2020 15:51:00";
-var inRoom = ['Lamp', 'Table', 'Glass', 'whitePaper'];
-var LEVEL = 'DEBUG';
-var SCHIZO = 10;
-var k,i;
+let consoleEl = document.getElementById("console");
+let things = ['Lamp', 'Table', 'Glass', 'whitePaper'];
+let [minTime, maxTime] = [31, 56];
+let data = {
+  bites: '64 bytes from 127.0.0.1:',
+  light: (turnLight(things[0] + '=', 'on')).toString().toLowerCase(),
+  things: 'things=' + things.join(','),
+  SCHIZO: 1000
+};
 
 function turnLight(thing, state){
-        if (state == 'on') {
-          return thing + " is on";
-    } else {
-        return thing + ' is off';
-    }
+  return (state == 'on') ? thing + "on" : thing + 'off';
 }
 
-function log(...params){
-    var j = ''
-    for (i=0; i<params.length; i++) {
-    j += (params[i])
+function getTimeStr() {
+  return 'time=0.0' + (Math.random() * ((minTime, maxTime)) + minTime).toFixed().toString();
+}
+
+function run() {
+  for(let i=0; i < data.SCHIZO; i++) {
+    (function(i) {
+      setTimeout(function() {
+        let logLineEl = document.createElement("li");
+        logLineEl.innerHTML = data.bites + ' ' + data.light + ' ' + data.things + ' ' + getTimeStr();
+        consoleEl.append(logLineEl);
+        consoleEl.scrollTop = consoleEl.scrollHeight;
+      }, 1000*i);
+    })(i);
   }
-        return j;
 }
 
-for (k=1; k < SCHIZO; k++) {
-   var datum = Date.parse(myDate).toString();
-   document.write(log(datum/1000 + k, ' ', LEVEL, ': ', turnLight(inRoom[0],'on'), ' Things in Room: ', inRoom) + "<br>");
-}
+run();

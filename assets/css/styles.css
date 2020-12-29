@@ -54,3 +54,34 @@ h3 {
     padding: 15px;
     clear:both;
 }
+
+/***** ======== ****/
+
+.statement-1 {
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.statement-1 .console {
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    overflow: scroll;
+}
+
+.statement-1 .console li {
+    list-style-type: none;
+}
+
+.statement-3 {
+    width: 100%;
+    text-align: center;
+}
+
+.statement-3 .dice {
+    float: left;
+    width: 50%;
+}
