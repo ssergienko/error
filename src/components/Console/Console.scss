@@ -1,11 +1,14 @@
 .console {
   height: 350px;
   overflow: scroll;
-  padding-left: 10px;
   width: 100%;
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: red;
+    outline: 1px solid slategrey;
   }
 }

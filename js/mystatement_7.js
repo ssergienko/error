@@ -1,11 +1,15 @@
 // I'm not at all sure already that my home is safe. 
 // It seems the walls are not absolutely vertical.
 
-var firstCheck = false;
-var secondCheck = false;
+const amIMental = true;
 
-let isHomeSafe = (firstCheck) ? true : false;
-let isWallVertical = (secondCheck) ? true : false;
+const checkMentalStatus = () => {
+  if(amIMental) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
-document.write("<p> My home is safe: " + isHomeSafe + "</p>");
-document.write("<p> All my walls are vertical: " + isWallVertical + "</p>");
+document.write(`My home is safe: ${isHomeSafe}`);
+document.write(`All my walls are vertical: ${isWallVertical}`);
