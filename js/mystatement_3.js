@@ -1,5 +1,5 @@
 // On all counts I was to feel worse today. But I'm well.
-// It's illogic
+// It does not make any sense
 
 let [min, max, count, maxAttempts] = [1, 6, 0, 1000];
 let dice1el = document.getElementById("dice-1");

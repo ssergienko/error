@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 
 function Console() {
 
-  const turnLight = (thing, state) => (state === 'on') ? thing + "on" : thing + 'off';
+  const turnLight = (state) => (state === 'on') ? 'on' : 'off';
 
-  const config = {
+  const data = {
     bites: '64 bytes from 127.0.0.1:',
-    light: (turnLight('lamp=', 'on')).toString().toLowerCase(),
+    light: 'lamp=' + turnLight('on'),
     things: 'things=' + ['Lamp', 'Table', 'Glass', 'whitePaper'].join(','),
     time: 'time=0.0' + (Math.random() * ((31, 65)) + 31).toFixed().toString()
   };
@@ -18,9 +18,9 @@ function Console() {
     const timer = setInterval(() => {
       let logsRes = [];
       if(!logs.length) { 
-        logsRes = [[config.bites, config.light, config.things, config.time].join(' ')]; }
+        logsRes = [[data.bites, data.light, data.things, data.time].join(' ')]; }
       else {
-        logsRes.push(...logs, [config.bites, config.light, config.things, config.time].join(' '));
+        logsRes.push(...logs, [data.bites, data.light, data.things, data.time].join(' '));
       }
       setLogs(logsRes);
     }, 1000);
@@ -34,10 +34,10 @@ function Console() {
   
   return (
     <div className="console" id="console">
-      <ul id="lines">
-        {logs && logs.length > 0 && logs.map((myline, i) => {
-          return (<li key={i}>{myline}</li>)
-        })}
+      <ul>
+        {logs && logs.length > 0 && logs.map((myline, i) => 
+          <li key={i}>{myline}</li>
+        )}
       </ul>
     </div>
   );
