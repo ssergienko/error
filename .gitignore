@@ -2,3 +2,5 @@
 /build
 node_modules
 .eslintcache
+.cache
+.temp-eslintcache
