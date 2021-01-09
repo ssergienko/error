@@ -40,5 +40,21 @@
       "id": 1,
       "url": "https://anerror.s3.amazonaws.com/111.png"
     }
+  },
+  {
+    "id": 4,
+    "author": {
+      "id": 1,
+      "firstname": "My",
+      "surname": "Name",
+      "avatar": ""
+    },
+    "text": "It seems there is something in my nose. And there is also some tightness in my throat.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/111.png"
+    }
   }
+
+  
 ]

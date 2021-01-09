@@ -1,20 +1,30 @@
 // On all counts I was to feel worse today. But I'm well.
 // It does not make any sense
 
-var count = 0;
+let [min, max, count, maxAttempts] = [1, 6, 0, 1000];
+let dice1el = document.getElementById("dice-1");
+let dice2el = document.getElementById("dice-2");
 
-const rolldice = () => {
-  return {
-        x: Math.floor(Math.random() * ((6 - 1) + 1) + 1),
-        y: Math.floor(Math.random() * ((6 - 1) + 1) + 1),
-  };
+function rolldice() {
+  return { 
+    x: Math.floor(Math.random() * ((max - min) + 1) + 1),
+    y: Math.floor(Math.random() * ((max - min) + 1) + 1)
+  }
 };
 
-while (true) {
-  count++;
+function run() {
+  for(let i=0; i < maxAttempts; i++) {
+    //Now reroll the dice, is it your state?
+    let dice = rolldice();
 
-  var dice = rolldice();
-  var dicetotal = dice.x + dice.y;
+    (function(i) {
+      setTimeout(function() {
+        dice1el.innerHTML = dice.x;
+        dice2el.innerHTML = dice.y;
+      }, 3000*i);
+    })(i); 
 
-  document.write(`Attempt # ${count} Score: ${dicetotal} What am I feeling`);
+  }
 }
+
+run();
