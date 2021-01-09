@@ -9,9 +9,8 @@ function sum(num1,num2) {
 
 health = sum(999, "Normal");
 
-
 if (parseInt(health)) {
-  document.write("<p>" + health + " is an Integer, therefore I am Normal</p>");
+  document.write(`<p>${health} is an Integer, therefore I am Normal</p>`);
 }
 else {
   document.write("I'm not Normal");
