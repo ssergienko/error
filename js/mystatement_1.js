@@ -20,7 +20,7 @@ function log(...params){
     for (i=0; i<params.length; i++) {
     j += (params[i])
   }
-        return j;
+  return j;
 }
 
 for (k=1; k < SCHIZO; k++) {
