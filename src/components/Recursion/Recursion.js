@@ -8,7 +8,8 @@ function Recursion() {
 
   return (
     <div className="recursion">
-      <Window text="How many frogs can you swallow?" />
+      <Window text="How many frogs can you swallow?" style={{margin: `30px`}} />
+      <Window text="How many frogs can you swallow?" style={{margin: `130px`}} />
     </div>
   );
 
