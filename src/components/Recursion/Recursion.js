@@ -5,7 +5,7 @@ import Window from "./Window/Window";
 function Recursion() {
 
   let [min, max] = [100, 501];
-  const windowsLimit = 30;
+  const windowsLimit = 50;
   const [windows, setWindows] = React.useState([]);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function Recursion() {
         ]);
       }
       setWindows(windowsRes);
-    }, windows.length === windowsLimit ? 5000 : 200);
+    }, windows.length === windowsLimit ? 5000 : 100);
     return () => {
       clearInterval(timer);
     };
