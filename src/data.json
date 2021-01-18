@@ -54,6 +54,20 @@
       "id": 1,
       "url": "https://anerror.s3.amazonaws.com/code4.png"
     }
+  },
+  {
+    "id": 5,
+    "author": {
+      "id": 1,
+      "firstname": "My",
+      "surname": "Name",
+      "avatar": ""
+    },
+    "text": "I am a primary key.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/code4.png"
+    }
   }
 
   
