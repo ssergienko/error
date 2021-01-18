@@ -2,15 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 14px;
   line-height: normal;
   color: #000;
   text-align: center;
-  width: 350px;
   height: 220px;
   background-color: #D2D9D2;
   border-radius: 0 0 5px 5px;
   span {
     width: 40%;
+  }
+}
+.bodyStackOverflow {
+  height: 220px;
+  background-color: #fff;
+  color: red;
+  font-size: 11px;
+  line-height: 1rem;
+  ul {
+    margin: 0;
+    padding: 0 8px;
   }
 }

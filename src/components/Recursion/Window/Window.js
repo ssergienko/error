@@ -2,12 +2,12 @@ import './Window.scss';
 import Header from "./Header/Header";
 import Body from "./Body/Body";
 
-function Window({text}) {
+function Window(params) {
 
   return (
-    <div className="window">
+    <div className="window" style={params.style}>
       <Header />
-      <Body text={text} />
+      <Body text={params.text} stack={params.stack} />
     </div>
   );
 

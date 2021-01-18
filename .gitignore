@@ -4,3 +4,4 @@ node_modules
 .eslintcache
 .cache
 .temp-eslintcache
+node_modules/.cache/.eslintcache
