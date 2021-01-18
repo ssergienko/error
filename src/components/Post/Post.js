@@ -5,6 +5,7 @@ import Dice from '../Dice/Dice';
 import Counter from '../Counter/Counter';
 import Code from '../Code/Code';
 import Recursion from '../Recursion/Recursion';
+import PrimaryKey from '../PrimaryKey/PrimaryKey';
 
 function Post({post}) {
 
@@ -25,6 +26,7 @@ function Post({post}) {
         {post.id === 2 && (!codeMode ? <Dice /> : <Code post={post} />)}
         {post.id === 3 && (!codeMode ? <Counter /> : <Code post={post} />)}
         {post.id === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
+        {post.id === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
       </div>
       <div className="source-code-button" onClick={() => toggleCodeMode()}><span>[[ SOURSE CODE ]]</span></div>
     </div>
