@@ -1,11 +1,34 @@
 import './Body.scss';
 
-function Body({text}) {
+function Body(params) {
+
+  const anonymous = `<anonymous>`;
 
   return (
-    <div className="body">
-      <span>{text}</span>
-    </div>
+    <>
+    {!params.stack && 
+      <div className="body">
+        <span>{params.text}</span>
+      </div>
+    }
+    {params.stack && 
+      <div className="bodyStackOverflow">
+        <ul>
+          <li>Uncaught RangeError: Maximum call stack size exceeded</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+          <li>at func (${anonymous}:1:25)</li>
+        </ul>
+      </div>
+    }
+    </>
   );
 
 }
