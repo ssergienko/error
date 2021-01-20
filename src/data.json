@@ -68,21 +68,6 @@
       "id": 1,
       "url": "https://anerror.s3.amazonaws.com/code4.png"
     }
-  },
-  {
-    "id": 6,
-    "author": {
-      "id": 1,
-      "firstname": "My",
-      "surname": "Name",
-      "avatar": ""
-    },
-    "text": "Still can't find those 10 pages I wrote about... keep forgetting things... have to make notes - sometimes put it down on a paper, sometimes use stikers...",
-    "image": {
-      "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code4.png"
-    }
   }
-
   
 ]
