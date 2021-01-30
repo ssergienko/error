@@ -1,11 +1,11 @@
 import './Code.scss';
-import React, { useEffect } from "react";
+import React from "react";
 
 function Code({post}) {
 
   return (
     <div className="code">
-      <img src={post.image.url} />
+      <img src={post.image.url} alt="Error" />
     </div>
   );
 
