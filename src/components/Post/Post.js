@@ -6,16 +6,11 @@ import Counter from '../Counter/Counter';
 import Code from '../Code/Code';
 import Recursion from '../Recursion/Recursion';
 import PrimaryKey from '../PrimaryKey/PrimaryKey';
-import MyBook from '../Book/Book';
+import Soap from '../Soap/Soap';
 
 function Post({post}) {
 
   const [codeMode, setCodeMode] = React.useState(false);
-  const toggleCodeMode = (postId) => {
-    if(!postId) {
-      setCodeMode(!codeMode);
-    }
-  }
 
   return (
     <div className="post">
@@ -30,9 +25,10 @@ function Post({post}) {
         {post.id === 3 && (!codeMode ? <Counter /> : <Code post={post} />)}
         {post.id === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
         {post.id === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
+        {post.id === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
         {/* {post.id === 6 && (<MyBook />)} */}
       </div>
-      <div className="source-code-button" onClick={() => toggleCodeMode(post.id)}><span>[[ SOURSE CODE ]]</span></div>
+      <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[[ SOURSE CODE ]]</span></div>
     </div>
   );
 

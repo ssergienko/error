@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import posts from './data.json';
 import Post from './components/Post/Post';

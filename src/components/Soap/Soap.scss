@@ -1,0 +1,18 @@
+.soap-and-towel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  .block {
+    width: 200px;
+    height: 133px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &.question-mark span {
+      font-size: 5rem;
+      color: #8BAE8B;
+    }
+  }
+}
