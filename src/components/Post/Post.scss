@@ -1,6 +1,19 @@
 .post:first-child {
   margin-top: 20px;
 }
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #8BAE8B;
+  border-radius: 50%;
+  margin: 0 15px 15px 0;
+  text-align: center;
+  span {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+}
 .post {
   width: 50%;
   background-color: #fff;
@@ -9,19 +22,6 @@
   .author {
     display: flex;
     padding: 15px 15px 0;
-    .avatar {
-      width: 50px;
-      height: 50px;
-      background-color: #8BAE8B;
-      border-radius: 50%;
-      margin: 0 15px 15px 0;
-      text-align: center;
-      span {
-        display: block;
-        margin-top: 12px;
-        font-weight: 600;
-      }
-    }
     .name {
       color: #000;
       font-weight: 700;
