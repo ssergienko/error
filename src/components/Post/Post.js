@@ -7,6 +7,7 @@ import Code from '../Code/Code';
 import Recursion from '../Recursion/Recursion';
 import PrimaryKey from '../PrimaryKey/PrimaryKey';
 import Soap from '../Soap/Soap';
+import Comment from './Comment/Comment';
 
 function Post({post}) {
 
@@ -29,6 +30,7 @@ function Post({post}) {
         {/* {post.id === 6 && (<MyBook />)} */}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[[ SOURSE CODE ]]</span></div>
+      <Comment />
     </div>
   );
 
