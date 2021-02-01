@@ -10,6 +10,11 @@ body {
 }
 
 .app {
+  .notification-container {
+    .notification-success {
+      background-color: #8BAE8B !important;
+    }
+  }
   .feed {
     min-height: 100vh;
     display: flex;
