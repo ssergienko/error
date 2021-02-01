@@ -17,7 +17,10 @@ function Post({post}) {
     <div className="post">
       <div className="author">
         <div className="avatar"><span>?</span></div>
-        <div className="name">{post.author.firstname} {post.author.surname}</div>
+        <div className="name-and-date">
+          <div className="name">{post.author.firstname} {post.author.surname}</div>
+          <div className="date">{post.author.date}</div>
+        </div>
       </div>
       <div className="text">{post.text}</div>
       <div className="widget" id="widget">

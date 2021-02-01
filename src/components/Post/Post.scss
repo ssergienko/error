@@ -14,6 +14,13 @@
     font-weight: 600;
   }
 }
+.name-and-date {
+  display: flex;
+  flex-direction: column;
+  .date {
+    color: gray;
+  }
+}
 .post {
   width: 50%;
   background-color: #fff;
