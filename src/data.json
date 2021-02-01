@@ -5,9 +5,10 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
-    "text": "Today is October 31,2020 15:51. I'm writing in the presence of the glass. It's in front of me on the table. It's 2 centimeters away from the sheet of paper I'm writing on. There is a lamp on the wall just nearby. The light is on.",
+    "text": "Today is October 31, 2020 15:51. I'm writing in the presence of the glass. It's in front of me on the table. It's 2 centimeters away from the sheet of paper I'm writing on. There is a lamp on the wall just nearby. The light is on.",
     "image": {
       "id": 1,
       "url": "https://anerror.s3.amazonaws.com/code1.png"
@@ -19,7 +20,8 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
     "text": "I was sure it would be worse today. But I've been feeling well inside myself. That's confusing.",
     "image": {
@@ -33,7 +35,8 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
     "text": "I've developed a program that controls my day minute by minute. I've got 2 minutes to get myself dressed and brushed before it's time to consume food.",
     "image": {
@@ -47,7 +50,8 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
     "text": "It seems there is something in my nose. And there is also some tightness in my throat.",
     "image": {
@@ -61,7 +65,8 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
     "text": "I am a primary key.",
     "image": {
@@ -75,7 +80,8 @@
       "id": 1,
       "firstname": "My",
       "surname": "Name",
-      "avatar": ""
+      "avatar": "",
+      "date": "October 31, 2020 15:51"
     },
     "text": "What to put first - towels or soap?",
     "image": {
