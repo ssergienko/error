@@ -1,15 +1,23 @@
-.App {
-  
+@import 'react-notifications/lib/notifications.css';
+
+body {
+  background-color: #D2D9D2;
+  &.blackhole {
+    background: url('https://anerror.s3.amazonaws.com/blackhole2.png') repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
 }
 
-.App-header {
-  background-color: #D2D9D2;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  line-height: 26px;
-  color: white;
+.app {
+  .feed {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+  }
 }

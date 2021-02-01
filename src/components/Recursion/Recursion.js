@@ -27,15 +27,18 @@ function Recursion() {
     <div className="recursion">
       {windows && 
         windows.map((window, index) => {
-          const lastWindow = index === windowsLimit-1;
+          let lastWindow = (index === windowsLimit-1);
           let style = lastWindow ? {left: '50%', top: '16%', marginLeft: '-175px'} : {margin: window.join(' ')}
-          return (<Window 
-            key={`index-${index}`} 
-            stack={lastWindow}
-            text="How many frogs can you swallow?" 
-            style={style} />)
-          }
-        )}
+          return (
+            <div key={`index-${index}`}>
+              {lastWindow && <div className="background"></div>}
+              <Window 
+                stack={lastWindow}
+                text="How many frogs can you swallow?" 
+                style={style} />
+            </div>
+          )}
+      )}
     </div>
   );
 

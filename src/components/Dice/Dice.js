@@ -10,7 +10,13 @@ function Dice({post}) {
   const [dice2, setDice2] = React.useState();
   const [counter, setCounter] = React.useState(0);
 
-  
+  useEffect(() => {
+    if(dice1 === 1 && dice2 === 6) {
+      document.body.classList.add('blackhole');
+    } else {
+      document.body.classList.remove('blackhole');
+    }
+  });
 
   useEffect(() => {
     const rolldice = () => {
