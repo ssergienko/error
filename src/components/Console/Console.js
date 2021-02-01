@@ -25,7 +25,7 @@ function Console() {
       setLogs(logsRes);
     }, 1000);
     return () => clearInterval(timer);
-  }, [logs]);
+  }, [logs, data.bites, data.light, data.things, data.time]);
 
   useEffect(() => {
     const objDiv = document.getElementById('console');

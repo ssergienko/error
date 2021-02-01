@@ -1,22 +1,7 @@
 // I'm not at all sure already that my home is safe. 
 // It seems the walls are not absolutely vertical.
 
-const amIMental = true;
-
-const checkMentalStatus = () => {
-  if(amIMental) {
-    return false;
-  } else {
-    return true;
-  }
-}
-
-document.write(`My home is safe: ${isHomeSafe}`);
-document.write(`All my walls are vertical: ${isWallVertical}`);
-
-////////// CODE THAT WILL WORK ///////////
-
-/*let [min, max, count, maxAttempts] = [1, 6, 0, 1000];
+let [min, max, count, maxAttempts] = [1, 6, 0, 1000];
 let dice1el = document.getElementById("dice-1");
 let dice2el = document.getElementById("dice-2");
 
@@ -41,4 +26,4 @@ function run() {
 
   }
 
-}*/
+}

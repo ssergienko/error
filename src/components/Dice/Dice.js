@@ -10,12 +10,19 @@ function Dice({post}) {
   const [dice2, setDice2] = React.useState();
   const [counter, setCounter] = React.useState(0);
 
-  const rolldice = () => {
-    setDice1(Math.floor(Math.random() * ((max - min) + 1) + 1));
-    setDice2(Math.floor(Math.random() * ((max - min) + 1) + 1));
-  };
+  useEffect(() => {
+    if(dice1 === 1 && dice2 === 6) {
+      document.body.classList.add('blackhole');
+    } else {
+      document.body.classList.remove('blackhole');
+    }
+  });
 
   useEffect(() => {
+    const rolldice = () => {
+      setDice1(Math.floor(Math.random() * ((max - min) + 1) + 1));
+      setDice2(Math.floor(Math.random() * ((max - min) + 1) + 1));
+    };
     let timer = setInterval(() => {
       if(counter >= shakeDace) {
         setCounter(0);
@@ -27,7 +34,7 @@ function Dice({post}) {
     return () => {
       clearInterval(timer);
     };
-  }, [counter]);
+  }, [counter, min, max]);
 
   return (
     <div className="dice_wrapper">

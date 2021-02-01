@@ -1,3 +1,12 @@
+# How to use notifications
+
+NotificationManager.info('Info message');
+NotificationManager.success('Success message', 'Title here');
+NotificationManager.warning('Warning message', 'Close after 3000ms', 3000);
+NotificationManager.error('Error message', 'Click me!', 5000, () => {
+  alert('callback');
+});
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
