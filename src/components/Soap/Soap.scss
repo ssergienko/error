@@ -14,5 +14,8 @@
       font-size: 5rem;
       color: #8BAE8B;
     }
+    &.draggable {
+      cursor: pointer;
+    }
   }
 }
