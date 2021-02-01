@@ -7,7 +7,6 @@ function Recursion() {
   let [min, max] = [100, 501];
   const windowsLimit = 50;
   const [windows, setWindows] = React.useState([]);
-  const [lastWindow, setLastWindows] = React.useState(false);
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -31,14 +30,13 @@ function Recursion() {
           let lastWindow = (index === windowsLimit-1);
           let style = lastWindow ? {left: '50%', top: '16%', marginLeft: '-175px'} : {margin: window.join(' ')}
           return (
-            <>
+            <div key={`index-${index}`}>
               {lastWindow && <div className="background"></div>}
               <Window 
-                key={`index-${index}`} 
                 stack={lastWindow}
                 text="How many frogs can you swallow?" 
                 style={style} />
-            </>
+            </div>
           )}
       )}
     </div>

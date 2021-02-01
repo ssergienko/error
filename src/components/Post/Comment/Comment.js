@@ -1,11 +1,16 @@
 import './Comment.scss';
 import React from "react";
+import {NotificationManager} from 'react-notifications';
 
 function Comment() {
 
   const [commentText, setCommentText] = React.useState('');
 
   const onClick = () => {
+    if(commentText) {
+      NotificationManager.success(`${commentText}`, 'Voice in my head');
+      
+    }
     setCommentText('');
   }
 

@@ -1,15 +1,17 @@
 import './App.scss';
 import posts from './data.json';
 import Post from './components/Post/Post';
+import { NotificationContainer } from 'react-notifications';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <div className="feed">
         {posts.map((post) => 
           <Post post={post} key={post.id} />
         )}
-      </header>
+      </div>
+      <NotificationContainer/>
     </div>
   );
 }
