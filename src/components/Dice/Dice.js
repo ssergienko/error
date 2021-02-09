@@ -1,7 +1,7 @@
 import './Dice.scss';
 import React, { useEffect } from "react";
 
-function Dice({post}) {
+function Dice() {
 
   let [min, max] = [1, 6];
   const shakeDace = 30;
@@ -9,14 +9,6 @@ function Dice({post}) {
   const [dice1, setDice1] = React.useState();
   const [dice2, setDice2] = React.useState();
   const [counter, setCounter] = React.useState(0);
-
-  useEffect(() => {
-    if(dice1 === 1 && dice2 === 6) {
-      document.body.classList.add('blackhole');
-    } else {
-      document.body.classList.remove('blackhole');
-    }
-  });
 
   useEffect(() => {
     const rolldice = () => {

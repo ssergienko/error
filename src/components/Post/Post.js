@@ -8,10 +8,17 @@ import Recursion from '../Recursion/Recursion';
 import PrimaryKey from '../PrimaryKey/PrimaryKey';
 import Soap from '../Soap/Soap';
 import Comment from './Comment/Comment';
+import { useParams } from "react-router";
+import posts from '../../data.json';
 
-function Post({post}) {
+function Post({data}) {
 
+  let { id } = useParams();
   const [codeMode, setCodeMode] = React.useState(false);
+
+  let post = data ? data : posts.find((post) => post.id === Number(id));
+
+  if(!post) return (<div>Error Occured.</div>);
 
   return (
     <div className="post">

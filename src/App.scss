@@ -2,11 +2,6 @@
 
 body {
   background-color: #D2D9D2;
-  &.blackhole {
-    background: url('https://anerror.s3.amazonaws.com/blackhole2.png') repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-  }
 }
 
 .app {
@@ -25,4 +20,11 @@ body {
     line-height: 26px;
     color: white;
   }
+}
+
+.red-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
