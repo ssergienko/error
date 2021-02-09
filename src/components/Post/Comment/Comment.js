@@ -8,7 +8,7 @@ function Comment() {
 
   const onClick = () => {
     if(commentText) {
-      NotificationManager.success(`${commentText}`, 'Voice in my head');
+      NotificationManager.success(`${commentText}`, 'Voice');
       
     }
     setCommentText('');
