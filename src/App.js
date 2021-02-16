@@ -16,7 +16,7 @@ function App() {
 
   const showRedCanvas = () => {
     return seconds === redBackgroundSecondsValue || 
-           (seconds > redBackgroundSecondsValue && seconds < redBackgroundSecondsValue + 3);
+           (seconds > redBackgroundSecondsValue && seconds < redBackgroundSecondsValue + 1);
   }
 
   useEffect(() => {
