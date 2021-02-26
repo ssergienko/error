@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import './App.scss';
-import posts from './data.json';
-import Post from './components/Post/Post';
+import Feed from './components/Feed/Feed';
 import { NotificationContainer } from 'react-notifications';
 import {
   BrowserRouter as Router,
@@ -19,6 +18,10 @@ function App() {
            (seconds > redBackgroundSecondsValue && seconds < redBackgroundSecondsValue + 1);
   }
 
+  const onBackClicked = () => {
+    window.history.back();
+  }
+
   useEffect(() => {
     let timer = setInterval(() => {
       const date = new Date();
@@ -32,24 +35,19 @@ function App() {
   return (
     <>
       {!showRedCanvas() && <div className="app">
+        <div className="back-button" onClick={onBackClicked}>&#8592;</div>
         <Router>
           <Switch>
             <Route path="/post/:id">
-              <div className="feed">
-                <Post />
-              </div>
+              <Feed />
             </Route>
             <Route path="/">
-              <div className="feed">
-                {posts.map((post) => 
-                  <Post data={post} key={post.id} />
-                )}
-              </div>
+              <Feed />
             </Route>
           </Switch>
         </Router>
         <NotificationContainer/>
-      </div>}
+        </div>}
       {showRedCanvas() && <div className="red-canvas"></div>}
     </>
   );
