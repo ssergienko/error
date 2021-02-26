@@ -23,16 +23,16 @@ function MyBook() {
       drawShadow={true} 
       flippingTime={1000}
       ref={(component) => turnPage(component)}>
-      <div className="demoPage">
+      <div className="demoPage">sdfsdfsdf
         <div className="pageContent"><br/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/></div>
       </div>
-      <div className="demoPage">
+      <div className="demoPage">sdfsdf
         <div className="pageContent"><br/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/></div>
       </div>
-      <div className="demoPage">
+      <div className="demoPage">error
         <div className="pageContent"><br/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/></div>
       </div>
-      <div className="demoPage">
+      <div className="demoPage">sdfsd
         <div className="pageContent"><br/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/><hr/><br/></div>
       </div>
     </HTMLFlipBook>

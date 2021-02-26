@@ -8,20 +8,15 @@ import Recursion from '../Recursion/Recursion';
 import PrimaryKey from '../PrimaryKey/PrimaryKey';
 import Soap from '../Soap/Soap';
 import Comment from './Comment/Comment';
-import { useParams } from "react-router";
-import posts from '../../data.json';
 
-function Post({data}) {
+function Post({post, myref}) {
 
-  let { id } = useParams();
   const [codeMode, setCodeMode] = React.useState(false);
-
-  let post = data ? data : posts.find((post) => post.id === Number(id));
 
   if(!post) return (<div>Error Occured.</div>);
 
   return (
-    <div className="post">
+    <div className="post" ref={myref}>
       <div className="author">
         <div className="avatar"><span>?</span></div>
         <div className="name-and-date">
@@ -37,7 +32,6 @@ function Post({data}) {
         {post.id === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
         {post.id === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
         {post.id === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
-        {/* {post.id === 6 && (<MyBook />)} */}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[[ SOURSE CODE ]]</span></div>
       <Comment />

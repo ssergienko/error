@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.scss';
 import posts from './data.json';
-import Post from './components/Post/Post';
+import Feed from './components/Feed/Feed';
 import { NotificationContainer } from 'react-notifications';
 import {
   BrowserRouter as Router,
@@ -35,16 +35,10 @@ function App() {
         <Router>
           <Switch>
             <Route path="/post/:id">
-              <div className="feed">
-                <Post />
-              </div>
+              <Feed posts={posts} />
             </Route>
             <Route path="/">
-              <div className="feed">
-                {posts.map((post) => 
-                  <Post data={post} key={post.id} />
-                )}
-              </div>
+              <Feed posts={posts} />
             </Route>
           </Switch>
         </Router>
