@@ -26,12 +26,12 @@ function Post({post, myref}) {
       </div>
       <div className="text">{post.text}</div>
       <div className="widget" id="widget">
-        {post.id === 1 && (!codeMode ? <Console /> : <Code post={post} />)}
-        {post.id === 2 && (!codeMode ? <Dice /> : <Code post={post} />)}
-        {post.id === 3 && (!codeMode ? <Counter /> : <Code post={post} />)}
-        {post.id === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
-        {post.id === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
-        {post.id === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
+        {post.type === 1 && (!codeMode ? <Console /> : <Code post={post} />)}
+        {post.type === 2 && (!codeMode ? <Dice /> : <Code post={post} />)}
+        {post.type === 3 && (!codeMode ? <Counter /> : <Code post={post} />)}
+        {post.type === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
+        {post.type === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
+        {post.type === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[[ SOURSE CODE ]]</span></div>
       <Comment />

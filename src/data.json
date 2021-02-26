@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "type": 1,
     "author": {
       "id": 1,
       "firstname": "My",
@@ -15,7 +15,7 @@
     }
   },
   {
-    "id": 2,
+    "type": 2,
     "author": {
       "id": 1,
       "firstname": "My",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "id": 3,
+    "type": 3,
     "author": {
       "id": 1,
       "firstname": "My",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "id": 4,
+    "type": 4,
     "author": {
       "id": 1,
       "firstname": "My",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "id": 5,
+    "type": 5,
     "author": {
       "id": 1,
       "firstname": "My",
@@ -75,7 +75,7 @@
     }
   },
   {
-    "id": 6,
+    "type": 6,
     "author": {
       "id": 1,
       "firstname": "My",
