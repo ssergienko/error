@@ -11,7 +11,7 @@
     "text": "Today is October 31, 2020 15:51. I'm writing in the presence of the glass. It's in front of me on the table. It's 2 centimeters away from the sheet of paper I'm writing on. There is a lamp on the wall just nearby. The light is on.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code1.png"
+      "url": "https://anerror.s3.amazonaws.com/1.jpg"
     }
   },
   {
@@ -26,7 +26,7 @@
     "text": "I was sure it would be worse today. But I've been feeling well inside myself. That's confusing.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code2.png"
+      "url": "https://anerror.s3.amazonaws.com/2.jpg"
     }
   },
   {
@@ -41,7 +41,7 @@
     "text": "I've developed a program that controls my day minute by minute. I've got 2 minutes to get myself dressed and brushed before it's time to consume food.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code3.png"
+      "url": "https://anerror.s3.amazonaws.com/3.jpg"
     }
   },
   {
@@ -56,7 +56,7 @@
     "text": "It seems there is something in my nose. And there is also some tightness in my throat.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code4.png"
+      "url": "https://anerror.s3.amazonaws.com/4.jpg"
     }
   },
   {
@@ -71,7 +71,7 @@
     "text": "I am a primary key.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code4.png"
+      "url": "https://anerror.s3.amazonaws.com/5.jpg"
     }
   },
   {
@@ -86,7 +86,7 @@
     "text": "What to put first - towels or soap?",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code4.png"
+      "url": "https://anerror.s3.amazonaws.com/6.jpg"
     }
   }
   

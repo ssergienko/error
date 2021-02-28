@@ -12,7 +12,6 @@ function Feed() {
   const refs = useRef([...new Array(postsInfinitList.length)].map(() => React.createRef()));
 
   const handleLoadMore = () => {
-    console.log(123123);
     setPostsInfinitList(postsInfinitList.concat(postsInfinitList));
   }
 
