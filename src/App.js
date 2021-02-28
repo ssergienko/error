@@ -19,7 +19,7 @@ function App() {
   }
 
   const onBackClicked = () => {
-    window.history.back();
+    window.location.href = "https://www.mariakokunova.com/error";
   }
 
   useEffect(() => {
