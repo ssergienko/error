@@ -9,6 +9,7 @@ import PrimaryKey from '../PrimaryKey/PrimaryKey';
 import Soap from '../Soap/Soap';
 import Comment from './Comment/Comment';
 import Allipsis from '../Allipsis/Allipsis';
+import Moon from '../Moon/Moon';
 
 function Post({post, myref}) {
 
@@ -34,6 +35,7 @@ function Post({post, myref}) {
         {post.type === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
         {post.type === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
         {post.type === 7 && (!codeMode ? <Allipsis /> : <Code post={post} />)}
+        {post.type === 8 && (!codeMode ? <Moon /> : <Code post={post} />)}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[ CODE ]</span></div>
       <Comment />
