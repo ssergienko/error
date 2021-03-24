@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import { useParams } from "react-router";
 import useInfiniteScroll from 'react-infinite-scroll-hook';
-import Post from '../Post/Post';
+import Post from './Post/Post';
 import posts from '../../data.json';
 import './Feed.scss';
 

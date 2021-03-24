@@ -1,7 +1,7 @@
 import './Allipsis.scss';
 import React from "react";
 
-function Soap() {
+function Allipsis() {
 
   return (
     <div className="allipsis-and-towel-wrapper">
@@ -11,4 +11,4 @@ function Soap() {
 
 }
 
-export default Soap;
+export default Allipsis;

@@ -1,15 +1,17 @@
 import './Post.scss';
 import React from "react";
-import Console from '../Console/Console';
-import Dice from '../Dice/Dice';
-import Counter from '../Counter/Counter';
-import Code from '../Code/Code';
-import Recursion from '../Recursion/Recursion';
-import PrimaryKey from '../PrimaryKey/PrimaryKey';
-import Soap from '../Soap/Soap';
+import { 
+  Console, 
+  Dice, 
+  Counter,
+  Recursion, 
+  PrimaryKey, 
+  Soap, 
+  Allipsis, 
+  Moon 
+} from '../../Widgets/index';
 import Comment from './Comment/Comment';
-import Allipsis from '../Allipsis/Allipsis';
-import Moon from '../Moon/Moon';
+import Code from './Code/Code';
 
 function Post({post, myref}) {
 
