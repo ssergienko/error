@@ -8,7 +8,8 @@ import {
   PrimaryKey, 
   Soap, 
   Allipsis, 
-  Moon 
+  Moon,
+  Clock 
 } from '../../Widgets/index';
 import Comment from './Comment/Comment';
 import Code from './Code/Code';
@@ -38,6 +39,7 @@ function Post({post, myref}) {
         {post.type === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
         {post.type === 7 && (!codeMode ? <Allipsis /> : <Code post={post} />)}
         {post.type === 8 && (!codeMode ? <Moon /> : <Code post={post} />)}
+        {post.type === 9 && (!codeMode ? <Clock /> : <Code post={post} />)}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[ CODE ]</span></div>
       <Comment />

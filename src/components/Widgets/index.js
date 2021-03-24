@@ -7,3 +7,4 @@ export {default as Moon} from './Moon/Moon';
 export {default as PrimaryKey} from './PrimaryKey/PrimaryKey';
 export {default as Recursion} from './Recursion/Recursion';
 export {default as Soap} from './Soap/Soap';
+export {default as Clock} from './Clock/Clock';
