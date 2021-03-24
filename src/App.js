@@ -36,17 +36,17 @@ function App() {
     <>
       {!showRedCanvas() && <div className="app">
         <div className="back-button" onClick={onBackClicked}>&#8592;</div>
-        <Router>
-          <Switch>
-            <Route path="/post/:id">
-              <Feed />
-            </Route>
-            <Route path="/">
-              <Feed />
-            </Route>
-          </Switch>
-        </Router>
-        <NotificationContainer/>
+          <Router>
+            <Switch>
+              <Route path="/post/:id">
+                <Feed />
+              </Route>
+              <Route path="/">
+                <Feed />
+              </Route>
+            </Switch>
+          </Router>
+          <NotificationContainer/>
         </div>}
       {showRedCanvas() && <div className="red-canvas"></div>}
     </>

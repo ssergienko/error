@@ -1,0 +1,70 @@
+
+/*DIGITAL CLOCK FONT*/
+@font-face{
+  font-family:'digital-7';
+  src: url('./digital-7.ttf');
+}
+
+.clock-wrapper {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  color: #ff0000;
+  font-family: 'digital-7', sans-serif;
+  flex-direction: column;
+  
+  /* DAYS OF THE WEEK */
+  .days {
+    color: #131212;
+    .day { 
+      display: inline-block; 
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  /* CLOCK */
+  .clock {
+    min-width: 350px;
+    div {
+      display: inline-block;
+      position: relative;
+      p {
+        font-size: 100px;
+        position: relative;
+        z-index: 100;
+      }
+    }
+    .placeholder {
+      color: #131212;
+      position: absolute;
+      top: 0;
+      z-index: 50;
+    }
+    .meridian { margin-left: 15px; }
+  }
+  
+  /* AM OR PM*/
+  .am-pm {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    width: 20px;
+    div p {
+      font-size: 12px;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+  
+  .am, .pm { color: #131212; }
+  
+  /*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+  .light-on { color: #ffffff; }
+
+}
