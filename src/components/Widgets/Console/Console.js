@@ -1,17 +1,15 @@
 import './Console.scss';
 import React, { useEffect } from "react";
 
+const turnLight = (state) => (state === 'on') ? 'on' : 'off';
+
 function Console() {
-
-  const turnLight = (state) => (state === 'on') ? 'on' : 'off';
-
   const data = {
     bites: '64 bytes from 127.0.0.1:',
     light: 'lamp=' + turnLight('on'),
     things: 'things=' + ['Lamp', 'Table', 'Glass', 'whitePaper'].join(','),
     time: 'time=0.0' + (Math.random() * ((31, 65)) + 31).toFixed().toString()
-  };
-
+  }
   const [logs, setLogs] = React.useState([]);
 
   useEffect(() => {
@@ -44,4 +42,4 @@ function Console() {
 
 }
 
-export default Console;
+export default React.memo(Console);

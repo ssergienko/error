@@ -1,5 +1,5 @@
 import './Post.scss';
-import React from "react";
+import React, { useMemo } from "react";
 import { 
   Console, 
   Dice, 
@@ -14,9 +14,30 @@ import {
 import Comment from './Comment/Comment';
 import Code from './Code/Code';
 
+const getWidget = (post) => {
+  switch(post.type) {
+    case 1: return <Console />;
+    case 2: return <Dice />;
+    case 3: return <Counter />;
+    case 4: return <Recursion />;
+    case 5: return <PrimaryKey />;
+    case 6: return <Soap />;
+    case 7: return <Allipsis />;
+    case 8: return <Moon />;
+    case 9: return <Clock />;
+    default: return <Console />;
+  }
+}
+
+const getCode = (post) => {
+  return <Code post={post} />;
+};
+
 function Post({post, myref}) {
 
   const [codeMode, setCodeMode] = React.useState(false);
+  const code = useMemo(() => getCode(post), [post]);
+  const widget = useMemo(() => getWidget(post), [post]);
 
   if(!post) return (<div>Error Occured.</div>);
 
@@ -31,15 +52,8 @@ function Post({post, myref}) {
       </div>
       <div className="text">{post.text}</div>
       <div className="widget" id="widget">
-        {post.type === 1 && (!codeMode ? <Console /> : <Code post={post} />)}
-        {post.type === 2 && (!codeMode ? <Dice /> : <Code post={post} />)}
-        {post.type === 3 && (!codeMode ? <Counter /> : <Code post={post} />)}
-        {post.type === 4 && (!codeMode ? <Recursion /> : <Code post={post} />)}
-        {post.type === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
-        {post.type === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
-        {post.type === 7 && (!codeMode ? <Allipsis /> : <Code post={post} />)}
-        {post.type === 8 && (!codeMode ? <Moon /> : <Code post={post} />)}
-        {post.type === 9 && (!codeMode ? <Clock /> : <Code post={post} />)}
+        <div className="code-wrapper" style={{display: !codeMode ? 'none' : 'block'}}>{code}</div>
+        <div className="widget-wrapper" style={{display: codeMode ? 'none' : 'block'}}>{widget}</div>
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[ CODE ]</span></div>
       <Comment />
@@ -48,4 +62,4 @@ function Post({post, myref}) {
 
 }
 
-export default Post;
+export default React.memo(Post);
