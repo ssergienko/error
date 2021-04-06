@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useMemo, useCallback} from 'react';
 import { useParams } from "react-router";
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import Post from './Post/Post';
@@ -13,6 +13,10 @@ const loadNextPage = (currentItems) => {
   });
 }
 
+const mapList = (postsInfinitList, refs) => {
+  return postsInfinitList.map((post, i) => <Post post={post} key={i} myref={refs.current[i]} />);
+}
+
 function Feed() {
 
   let { id } = useParams();
@@ -20,21 +24,22 @@ function Feed() {
   const [loading, setLoading] = React.useState(false);
   const refs = useRef([...new Array(postsInfinitList.length)].map(() => React.createRef()));
 
-  const handleLoadMore = () => {
+  const handleLoadMore = useCallback(() => {
     setLoading(true);
     loadNextPage(postsInfinitList).then((newItems) => {
       setLoading(false);
       setPostsInfinitList(newItems);
     });
-  }
+  }, [postsInfinitList]);
 
   const infiniteRef = useInfiniteScroll({
     loading,
     hasNextPage: true,
     onLoadMore: handleLoadMore,
     scrollContainer: 'window',
-    // threshold: 500
   });
+
+  const postsInfinitListMemo = useMemo(() => mapList(postsInfinitList, refs), [postsInfinitList, refs]);
 
   useEffect(() => {
     if(id && refs.current[id-1]) {
@@ -44,13 +49,10 @@ function Feed() {
 
   return (
     <div className="feed" ref={infiniteRef}>
-      {postsInfinitList.map((post, i) => 
-        <Post post={post} key={i} myref={refs.current[i]} />
-        
-      )}
+      {postsInfinitListMemo}
       {loading && <div>loading</div>}
     </div>
   );
 }
 
-export default Feed;
+export default React.memo(Feed);

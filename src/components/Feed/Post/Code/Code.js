@@ -1,14 +1,14 @@
 import './Code.scss';
-import React from "react";
+import React, { useMemo } from "react";
+import CodeImage from './CodeImage/CodeImage';
 
-function Code({post}) {
-
-  return (
-    <div className="code">
-      <img src={post.image.url} alt="Error" />
-    </div>
-  );
-
+const getStyle = (post) => {
+  return <CodeImage post={post} />;
 }
 
-export default Code;
+function Code({post}) {
+  const codeImage = useMemo(() => getStyle(post), [post]);
+  return (<div className="code-image">{codeImage}</div>);
+}
+
+export default React.memo(Code);
