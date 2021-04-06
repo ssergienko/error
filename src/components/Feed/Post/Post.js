@@ -1,14 +1,18 @@
 import './Post.scss';
 import React from "react";
-import Console from '../Console/Console';
-import Dice from '../Dice/Dice';
-import Counter from '../Counter/Counter';
-import Code from '../Code/Code';
-import Recursion from '../Recursion/Recursion';
-import PrimaryKey from '../PrimaryKey/PrimaryKey';
-import Soap from '../Soap/Soap';
+import { 
+  Console, 
+  Dice, 
+  Counter,
+  Recursion, 
+  PrimaryKey, 
+  Soap, 
+  Allipsis, 
+  Moon,
+  Clock 
+} from '../../Widgets/index';
 import Comment from './Comment/Comment';
-import Allipsis from '../Allipsis/Allipsis';
+import Code from './Code/Code';
 
 function Post({post, myref}) {
 
@@ -34,6 +38,8 @@ function Post({post, myref}) {
         {post.type === 5 && (!codeMode ? <PrimaryKey /> : <Code post={post} />)}
         {post.type === 6 && (!codeMode ? <Soap /> : <Code post={post} />)}
         {post.type === 7 && (!codeMode ? <Allipsis /> : <Code post={post} />)}
+        {post.type === 8 && (!codeMode ? <Moon /> : <Code post={post} />)}
+        {post.type === 9 && (!codeMode ? <Clock /> : <Code post={post} />)}
       </div>
       <div className="source-code-button" onClick={() => setCodeMode(!codeMode)}><span>[ CODE ]</span></div>
       <Comment />
