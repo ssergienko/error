@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useMemo, useCallback} from 'react';
 import { useParams } from "react-router";
 import useInfiniteScroll from 'react-infinite-scroll-hook';
 import Post from './Post/Post';
@@ -33,8 +33,9 @@ function Feed() {
     hasNextPage: true,
     onLoadMore: handleLoadMore,
     scrollContainer: 'window',
-    // threshold: 500
   });
+
+  const postsInfinitListMemo = useMemo(() => mapList(postsInfinitList, refs), [postsInfinitList, refs]);
 
   useEffect(() => {
     if(id && refs.current[id-1]) {
@@ -53,4 +54,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default React.memo(Feed);

@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 function Console() {
 
   const turnLight = (state) => (state === 'on') ? 'on' : 'off';
-
   const data = {
     bites: '64 bytes from 127.0.0.1:',
     light: 'lamp=' + turnLight('on'),

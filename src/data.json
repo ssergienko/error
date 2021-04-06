@@ -11,7 +11,7 @@
     "text": "Today is October 31, 2020 15:51. I'm writing in the presence of the glass. It's in front of me on the table. It's 2 centimeters away from the sheet of paper I'm writing on. There is a lamp on the wall just nearby. The light is on.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/1.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/slide.png"
     }
   },
   {
@@ -26,7 +26,7 @@
     "text": "I was sure it would be worse today. But I've been feeling well inside myself. That's confusing.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/2.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/2.png"
     }
   },
   {
@@ -41,7 +41,7 @@
     "text": "I've developed a program that controls my day minute by minute. I've got 2 minutes to get myself dressed and brushed before it's time to consume food.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/3.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/3.png"
     }
   },
   {
@@ -56,7 +56,7 @@
     "text": "It seems there is something in my nose. And there is also some tightness in my throat.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/4.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/4.png"
     }
   },
   {
@@ -71,7 +71,7 @@
     "text": "I am a primary key.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/5.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/5.png"
     }
   },
   {
@@ -86,7 +86,7 @@
     "text": "What to put first - towels or soap?",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/6.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/6.png"
     }
   },
   {
@@ -101,7 +101,37 @@
     "text": "I'm not at all sure already that my home is safe. It seems the walls are not absolutely vertical.",
     "image": {
       "id": 1,
-      "url": "https://anerror.s3.amazonaws.com/code7.jpg"
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/7.png"
+    }
+  },
+  {
+    "type": 8,
+    "author": {
+      "id": 1,
+      "firstname": "My",
+      "surname": "Name",
+      "avatar": "",
+      "date": "March 22, 2021 6:55"
+    },
+    "text": "It's absolutely impossible for me to start treatment this year. Then it will continue in the next year and thus will be disrupted.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/8.png"
+    }
+  },
+  {
+    "type": 9,
+    "author": {
+      "id": 1,
+      "firstname": "My",
+      "surname": "Name",
+      "avatar": "",
+      "date": "March 22, 2021 7:31"
+    },
+    "text": "I'll leave where the clock strickes.",
+    "image": {
+      "id": 1,
+      "url": "https://anerror.s3.amazonaws.com/code-images-optimized/9.png"
     }
   },
   {
